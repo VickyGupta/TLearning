@@ -39,11 +39,36 @@ class List<T> implements IList<T> {
 class EmployeeV2{
     private id:number;
     private name: string;
+    //private department : Department;
     constructor(id:number, name:string){
         this.id=id;
         this.name = name;
+        //this.department = department;
     }
 }
+
+// class Department{
+//     private id : number;
+//     private name : string;
+//     constructor(id:number, name:string){
+//         this.id = id;
+//         this.name = name;
+//     }
+// }
+
+
+// class DepartmentManager{
+//     public departments : List<Department>;
+//     public addDepartment (dep : Department){
+//         this.departments.add(dep);
+//     }
+
+//     public getDepartment () {
+//        return  this.departments.Items;
+//     }
+
+
+// }
 
 
 class EmployeeManager {
@@ -61,6 +86,8 @@ class EmployeeManager {
         return this.employees.find(emp);
     }
 }
+
+
 
 
 let employee1 : EmployeeV2 = new EmployeeV2(1, "vicky");
